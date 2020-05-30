@@ -1,8 +1,38 @@
 // @use 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
 
 $open-sans: 'Open Sans', sans-serif
+$poppins: 'Poppins', sans-serif
+$primary: hsl(257, 40%, 49%)
 
 body
    font-family: $open-sans
+   color: white
    background-image: url('../images/bg-desktop.svg')
+   background-color: $primary
+   background-repeat: no-repeat
+   background-size: auto
+
+.headings
+   font-family: $poppins
+
+.main-button
+   display: inline-block
+   background-color: white
+   border-radius: 30px
+   border: 0
+   padding: 15px 75px
+   color: $primary
+   box-shadow: 2px 3px blur rgba(50, 50, 50, 0.75)
+
+.logo
+   max-height: 50px
+
+.container
+   display: flex
+   flex-direction: row
+   justify-content: center
+   *
+      max-width: 50%
+      margin: 15px
